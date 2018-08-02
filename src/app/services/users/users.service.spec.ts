@@ -23,12 +23,20 @@ describe('UsersService', () => {
     });
 
     it('should return a collection of users', () => {
-      const userResponse = [{
-        id: '1',
-        name: 'Jane',
-        role: 'Designer',
-        pokemon: 'Blastoise'
-      }];
+      const userResponse = [
+        {
+          id: '1',
+          name: 'Jane',
+          role: 'Designer',
+          pokemon: 'Blastoise'
+        },
+        {
+          id: '2',
+          name: 'Bob',
+          role: 'Developer',
+          pokemon: 'Charizard'
+        }
+      ];
       let response;
       spyOn(usersService, 'all').and.returnValue(of(userResponse));
 
@@ -46,16 +54,16 @@ describe('UsersService', () => {
     });
 
     it('should return a single user', () => {
-      const userResponse = [{
+      const userResponse = {
         id: '2',
         name: 'Bob',
         role: 'Developer',
         pokemon: 'Charizard'
-      }];
+      };
       let response;
       spyOn(usersService, 'findOne').and.returnValue(of(userResponse));
 
-      usersService.findOne(2).subscribe(res => {
+      usersService.findOne('2').subscribe(res => {
         response = res;
       });
 
