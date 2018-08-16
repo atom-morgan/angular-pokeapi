@@ -6,8 +6,8 @@
           <div class="content">
             <p class="has-text-centered is-size-5"><a data-test="name" [routerLink]="['user', user.id]">{{user.name}}</a></p>
             <ul>
-              <li><strong>Role:</strong> {{user.role}}</li>
-              <li><strong>Pokemon:</strong> {{user.pokemon}}</li>
+              <li data-test="role"><strong>Role:</strong> {{user.role}}</li>
+              <li data-test="pokemon"><strong>Pokemon:</strong> {{user.pokemon}}</li>
             </ul>
           </div>
         </div>
