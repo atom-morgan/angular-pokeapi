@@ -1,4 +1,4 @@
-describe('Home page', () => {
+describe('User profile', () => {
   before(() => {
     Cypress.config('baseUrl', 'http://localhost:4200');
   });
