@@ -18,24 +18,10 @@ describe('UsersService', () => {
   });
 
   describe('all', () => {
-    it('should exist', () => {
-      expect(usersService.all).toBeDefined();
-    });
-
     it('should return a collection of users', () => {
       const userResponse = [
-        {
-          id: '1',
-          name: 'Jane',
-          role: 'Designer',
-          pokemon: 'Blastoise'
-        },
-        {
-          id: '2',
-          name: 'Bob',
-          role: 'Developer',
-          pokemon: 'Charizard'
-        }
+        { id: '1', name: 'Jane', role: 'Designer', pokemon: 'Blastoise' },
+        { id: '2', name: 'Bob', role: 'Developer', pokemon: 'Charizard' }
       ];
       let response;
       spyOn(usersService, 'all').and.returnValue(of(userResponse));
@@ -49,10 +35,6 @@ describe('UsersService', () => {
   });
 
   describe('findOne', () => {
-    it('should exist', () => {
-      expect(usersService.findOne).toBeDefined();
-    });
-
     it('should return a single user', () => {
       const userResponse = {
         id: '2',

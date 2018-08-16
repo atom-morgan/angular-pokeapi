@@ -37,10 +37,6 @@ describe('PokemonService', () => {
   });
 
   describe('findByName', () => {
-    it('should exist', () => {
-      expect(pokemonService.findByName).toBeDefined();
-    });
-
     it('should return a pokemon with a valid name', () => {
       const pokemonName = 'Blastoise';
       let response;

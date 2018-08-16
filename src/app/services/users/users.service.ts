@@ -6,30 +6,10 @@ import { Observable, of } from 'rxjs';
 })
 export class UsersService {
   users: Array<object> = [
-    {
-      id: '1',
-      name: 'Jane',
-      role: 'Designer',
-      pokemon: 'Blastoise'
-    },
-    {
-      id: '2',
-      name: 'Bob',
-      role: 'Developer',
-      pokemon: 'Charizard'
-    },
-    {
-      id: '3',
-      name: 'Jim',
-      role: 'Developer',
-      pokemon: 'Venusaur'
-    },
-    {
-      id: '4',
-      name: 'Bill',
-      role: 'Designer',
-      pokemon: 'Pikachu'
-    }
+    { id: '1', name: 'Jane', role: 'Designer', pokemon: 'Blastoise' },
+    { id: '2', name: 'Bob', role: 'Developer', pokemon: 'Charizard' },
+    { id: '3', name: 'Jim', role: 'Developer', pokemon: 'Venusaur' },
+    { id: '4', name: 'Adam', role: 'Designer', pokemon: 'Yoshi' },
   ];
 
   constructor() { }
