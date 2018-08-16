@@ -92,7 +92,7 @@ describe('ViewUserComponent', () => {
   });
 
   it('should display a pokemon image', () => {
-    const image = fixture.debugElement.query(By.css('.image img'));
+    const image = fixture.debugElement.query(By.css('.img-container img'));
     expect(image.properties.src).toContain('.png');
   });
 });

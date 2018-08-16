@@ -1,3 +1,15 @@
+.img-container {
+  width: 128px;
+  height: 128px;
+}
+
+.avatar {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .loading,
 .loading:before,
 .loading:after {
